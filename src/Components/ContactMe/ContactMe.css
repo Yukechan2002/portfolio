@@ -1,0 +1,134 @@
+.contact {
+  background: white;
+  padding: 3rem 0;
+  font-size: 18px;
+   font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+
+.contact a {
+  color: #007bff; /* This will change the link color to blue */
+  text-decoration: none; /* Removes the underline from links */
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.contact .section-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 2rem;
+}
+
+.contact .card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact .card-container .card {
+  background: #fff;
+  width: 360px;
+  margin: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+  border-radius: 3px;
+}
+
+.contact .card-container .card i {
+  font-size: 3.5rem;
+  color: #007bff; /* Change this color based on your design */
+  margin-bottom: 1rem;
+  transition: 0.4s;
+}
+
+.contact .card-container .card i:hover {
+  transform: translateY(-20%);
+}
+
+.contact .card-container .card > * {
+  margin: 0.5rem;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 3px;
+  box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+  padding: 2rem;
+}
+
+.contact form h2 {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 1.75rem;
+}
+
+.contact form .form-group input {
+  margin: 0.75rem 0;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #afafaf;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.contact form .form-group input:focus {
+  outline: none;
+}
+
+.contact form .form-group textarea {
+  width: 100%;
+  border-radius: 3px;
+  margin: 0.75rem 0;
+  border: 1px solid #afafaf;
+  padding: 0.75rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact form .form-group textarea:focus {
+  outline: none;
+}
+
+.contact form #status {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 3px;
+  color: #00b700;
+}
+
+.contact form #status.success {
+  color: #00b700;
+  animation: status 4s ease forwards;
+}
+
+.contact form #status.error {
+  color: red;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,96 @@
+.education {
+  background: white;
+  padding-bottom: 3rem;
+}
+
+.education .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.education h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 3rem;
+  font-size: 2rem; /* Main heading font size */
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.education .education-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+  padding: 40px;
+  border-radius: 3px;
+  transition: box-shadow 0.3s ease;
+}
+
+.education .education-card:hover {
+  box-shadow: 0 0.3rem 1rem rgba(43, 52, 56, 0.25);
+}
+
+.education .education-card-column {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.education .card-column-image {
+  flex: 0 0 20%;
+}
+
+.education .card-column-image img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+}
+
+.education .card-column-large {
+  flex: 0 0 80%;
+  padding-left: 1.5rem;
+
+}
+
+.education .card-column-large h4 {
+  font-size: 15px; /* Subheading font size */
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  padding: 2px;
+}
+
+.education .card-column-large ul {
+  padding-left: 1.5rem;
+  padding: 2px;
+}
+
+.education .card-column-large ul li {
+  font-size: 14px; /* List items font size */
+  margin-bottom: 0.5rem;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  padding: 2px;
+}
+
+.education .card-column-large p {
+  font-size: 14px; /* Paragraph font size */
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.education .card-column-large hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
+
+@media (max-width: 500px) {
+  .education .education-card {
+    padding: 20px;
+  }
+
+  .education h2 {
+    font-size: 1.75rem
+    ; /* Adjusted for smaller screens */
+  }
+}
